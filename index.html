@@ -17,8 +17,9 @@
         </header>
         <main>
             <ul>
-                <li v-for="(risultato,indice) in risultati" :key="indice">
-                    {{ risultato }}
+                <li v-for="(risultato,indice) in risultati" :key="indice" :class="
+                (indice%2 === 0) ? 'pari' : 'dispari' ">
+                    {{ `${indice+1}° email: ${risultato}` }}
                 </li>
             </ul>
         </main>

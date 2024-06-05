@@ -3,3 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+li{
+    margin: 0 4rem 3rem 4rem;
+}
+
+.dispari{
+    align-self: end;
+}
