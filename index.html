@@ -10,7 +10,18 @@
 </head>
 <body>
     <div id="app">
-        
+        <header>
+            <h1>
+                API Vue Email list
+            </h1>
+        </header>
+        <main>
+            <ul>
+                <li v-for="(risultato,indice) in risultati" :key="indice">
+                    {{ risultato }}
+                </li>
+            </ul>
+        </main>
     </div>
     
     <!--Axios Script-->
